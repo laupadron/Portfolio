@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>LauPadrón</title>
+ <link rel="stylesheet" href="./styles.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/2f1a95547f.js" crossorigin="anonymous"></script>
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="darkTheme">
+ <i class='iconShowMenu bx bx-menu'></i>
+ <nav class="navbar">
+  <div class="contact">
+   <span><a href="#home">Laura Padrón</a></span>
+   <a href="http://www.linkedin.com/in/laura-padron-662223254/"><i class="fa-brands fa-linkedin"></i></a>
+   <a href="./assets/CV LauraPadron.pdf" target="_blank" download="CV LauPadron"><button><i class="fa-solid fa-circle-down"></i>Descarga mi CV</button></a>
+  </div>
+  
+  
+  <ul class="navbar-menu ">
+   <li><a class="link link-active" href="#home">Inicio</a></li>
+   <li><a class="link" href="#about">Quien Soy</a></li>
+   <li><a class="link" href="#skills">Habilidades</a></li>
+   <li><a class="link" href="#portfolio">Portafolio</a></li>
+   <li><a class="link" href="#contact">Contáctame</a></li>
+   <li class=" link icon-theme">☽</li>
+   
+  </ul>
+ </nav>
+ <main class="container-principal">
+  <section id="home" class="hidden">
+   <div class="section-home">
+    <h1 class="home-title">Hola yo soy <span>Laura Padrón</span> y soy <span>Desarrolladora Frontend</span></h1>
+   <img class="img-home" src="./assets/IMAGENES/Wavy_Eco-01_Single-05.jpg" alt="">
+   </div>
+   
+  </section>
+  <section id="about" class="hidden">
+   <h2>Quien soy</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolore alias, inventore aliquam dicta facere reiciendis suscipit ipsam consequuntur labore voluptatum perspiciatis deserunt numquam non excepturi libero. Error, molestiae itaque?</p>
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit id cupiditate obcaecati deserunt harum, fuga ullam? Magnam asperiores nesciunt quasi, dolores, voluptate vel voluptates cupiditate officiis, praesentium eum dolor quibusdam?</p>
+   <div class="about-image">
+    <img src="./assets/icons/images/WhatsApp Image 2022-08-11 at 12.28.08.jpeg" alt="esta soy yo">
+   </div>
+  </section>
+  <section id="skills" class="hidden">
+   <h2 class="skills-h2">Habilidades</h2>
+   <div class="skills-container">
+    
+    <div class="skills1">
+     
+     <h2>Front End</h2>
+     <i class="fa-brands fa-html5 efects"></i>
+     <p>HTML</p>
+     <i class="fa-brands fa-css3-alt efects"></i>
+     <p>css</p>
+     <i class="fa-brands fa-js efects"></i>
+     <p>JavaScript</p>
+     <i class="fa-brands fa-react efects"></i>
+     <p>React</p>
+     <i class="fa-brands fa-github efects"></i>
+     <p>GitHub</p>
+    </div>
+    <div class="skills2">
+     <h2>Soft Skills</h2>
+     <i class="fa-solid fa-cube efects"></i>
+     <p>Flexibilidad y adaptación a cambios</p>
+     <i class="fa-solid fa-hands-asl-interpreting efects"></i>
+     <p>Trabajo en equipo, gestión de tiempo y buena comunicación</p>
+     <i class="fa-solid fa-ranking-star efects"></i>
+     <p>Soy una buscadora innata de soluciones</p>
+    </div>
+   </div>
+   
+  </section>
+  <section id="portfolio" >
+   <h2>Portafolio</h2>
+   <div class="portfolios">
+    <div class="portfolio " >
+     <a href="http://ecommercelaura.netlify.app/#"><img src="./assets/PROYECTOS/ecommerVanillaJS.png" alt="porta1" ></a>
+     <p>  E-commerce <br>Realizado en JS VANILLA</p>
+    </div>
+    <div class="portfolio ">
+     <a href="https://laupadronweather.netlify.app/"><img src="./assets/PROYECTOS/APPWEATHER.png" alt="porta2"></a>
+     
+     <p>APP Weather <br>REACT</p>
+    </div>
+    <div class="portfolio ">
+     <a href="https://laupadronweather.netlify.app/"><img src="./assets/PROYECTOS/RICKANDMORTY.png" alt="porta2"></a>
+     <p>Rick and Morty <br>REACT y uso de API</p>
+    </div>
+    <div class="portfolio ">
+     <a href="https://pokedexlaupadron.netlify.app/"><img src="./assets/PROYECTOS/POKEDEX.png" alt="porta2"></a>
+     <p>Pokedex <br>REACT y uso de API</p>
+    </div>
+    <div class="portfolio ">
+     <a href="https://visionary-pegasus-c14f26.netlify.app/"><img src="./assets/PROYECTOS/ecommerceREACT.png" alt="porta2"></a>
+     <p>E-Commerce <br>REACT y uso de API</p>
+    </div>
+   </div>
+  </section>
+  <section id="contact" class="hidden">
+   <h2>Contáctame</h2>
+   <form class="form" name="contact-form" netlify>
+    <input type="text" placeholder="Ingresa tu nombre" name="nameUser" id="nameUser" required>
+    <input type="email" placeholder="Ingresa tu correo" name="emailUser" id="emailUser" required>
+    <textarea name="commentUser" id="commentUser" cols="30" rows="10" placeholder="Escríbeme..."></textarea>
+     <button class="btn">Enviar</button>
+   </form>
+   
+  </section>         
+ </main>
+ 
+ 
+</body>
+<script src="./main.js"></script>
+</html>
