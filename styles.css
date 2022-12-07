@@ -164,6 +164,7 @@ i.fa-circle-down{
  
  .img-home{
   width: 30%;
+  background-color: transparent;
   height: 300px;
   border-radius: 50%;
   bottom: 10px;
