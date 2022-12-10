@@ -161,6 +161,12 @@ i.fa-circle-down{
   display: flex;
   gap: 2rem;
  }
+ @media(max-width:480px){
+  .section-home{
+   flex-direction: column;
+   align-items: center;
+  }
+ }
  
  .img-home{
   width: 30%;
@@ -203,9 +209,10 @@ i.fa-circle-down{
  
  }
  
- img{
+ .portfolio img{
   display: block;
-  max-width: 100%;
+  max-width: 350px;
+  max-height: 250px;
  }
  .portfolios{
   display: grid;
@@ -214,32 +221,34 @@ i.fa-circle-down{
   margin-bottom: 4rem;
   
  }
- .portfolio:nth-child(1){
-  
-  width: 350px;
-  height: 350px;
+ @media(max-width:480px){
+  .portfolios{
+   display: flex;
+   flex-direction: column;
+  }
  }
- .portfolio:nth-child(2){
- 
-  width: 350px;
-  height: 350px
- }
- .portfolio:nth-child(3){
- 
-  width: 350px;
-  height: 350px
- }
- .portfolio:nth-child(4){
- 
-  width: 350px;
-  height: 350px
- }
- .portfolio:nth-child(5){
- 
-  width: 350px;
-  height: 350px
- }
+ .portfolio {
+  display:inline-block;
+  position:relative;
+}
 
+.portfolio > div {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  padding:10px;
+  margin:0;
+}
+
+.desvanes:hover {
+  opacity: 0.07;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
 
  
  .skills-container{
@@ -286,6 +295,7 @@ i.fa-circle-down{
   flex-direction: column;
   gap: 1rem;
   width: 60%;
+  border-radius: 1rem;
  }
  .form input,
  .form textarea{
@@ -302,10 +312,15 @@ i.fa-circle-down{
  .btn{
   background-color: var(--color-principal);
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   padding: 1rem;
   color: var(--color-bg);
   cursor: pointer;
+ }
+ .btn:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: var(--color-principal);
  }
  @media(min-width: 800px){
   .portfolios{
@@ -329,4 +344,47 @@ i.fa-circle-down{
  .show{
   opacity: 1;
   transform: translateX(0);
+ }
+ .fa-whatsapp{
+  color: green;
+ }
+  footer{
+   margin-top: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+  footer button{
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   height: 40px;
+   border-radius: 3rem;
+  }
+  footer p{
+   margin-top: 1rem;
+  }
+  footer button:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+   background-color: var(--color-principal);
+  }
+  footer i{
+   font-size: 30px;
+  }
+  footer span{
+   color: var(--color-principal);
+  }
+ footer i{
+  color: var(--color-principal);
+ }
+ footer button{
+  padding-left: 1rem;
+  padding-right: 1rem ;
+ }
+ @media(max-width:480px){
+  footer{
+   margin-left: 1rem;
+   margin-right: 1rem;
+  }
  }
