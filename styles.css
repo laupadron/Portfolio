@@ -89,6 +89,7 @@ z-index: var(--z-icon-menu);
 .contact i{
  font-size: 30px;
  transition: all 400ms ease-out;
+ margin-top: 5px;
 }
 .contact i:hover{
  transform: scale(1.1);
@@ -96,10 +97,11 @@ z-index: var(--z-icon-menu);
 i.fa-circle-down{
  font-size: 20px;
  margin-right: 5px;
+ margin-top: 5px;
 }
 i.cell{
   font-size: 20px;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 .wpp{
   font-size: 13px;
@@ -108,7 +110,7 @@ i.cell{
 
 .contact button{
  width: fit-content;
- height: 28px;
+margin-top: 5px;
  border-radius: 10px;
  transition: all 400ms ease-out;
 }
